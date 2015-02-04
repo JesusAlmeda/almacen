@@ -1,0 +1,66 @@
+body{
+	font-size: 16px;
+}
+
+.jumbotron{
+	margin: .5em 0em 1em 0em;
+	box-shadow: 10px 10px 5px #888888;
+}
+#agregar{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#datosTabla{
+	box-shadow: 10px 10px 5px #888888;
+	float: left;
+	padding: 1.5em;
+	padding-bottom: 0em;
+	position: relative;
+	margin-top: 20%;
+	margin-left: 30%;
+	width: auto;
+}
+
+#foot{
+	border: 1px solid #BDBDBD;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+#navUsuario{
+	font-size: .8em;
+	padding: 0px;
+	margin: .5em 0em 1.2em 0em;
+	height: 40px;
+	width: 100%;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#navUsuario .navbar-brand{
+	background: #BDBDBD;
+	border-radius: 5px 0px 0px 5px;
+	color: white;
+	margin: 0em;
+	font-size: 1em;
+}
+
+#productosMas{
+	border: 1px solid #BDBDBD;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+#tablaAcceso{
+	margin: 10px;
+
+}
+
+
+
+
