@@ -23,10 +23,15 @@ class Inicio extends CI_Controller {
 	public function index()
 	{	
 		$datos['conexion']=$this->Inicio_model->conexion();
+		if($_POST){
+			echo $this->input->post('Nombre');
+			echo $this->input->post('Contra');
+		}else{
+			$this->load->view('estructura/head');
+			$this->load->view('entrada', $datos);
+			$this->load->view('estructura/foot1');
+		}
 		
-		$this->load->view('estructura/head');
-		$this->load->view('principal', $datos);
-		$this->load->view('estructura/foot');
 
 	}
 }
