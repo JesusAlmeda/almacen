@@ -24,14 +24,25 @@ class Inicio extends CI_Controller {
 	{	
 		$datos['conexion']=$this->Inicio_model->conexion();
 		if($_POST){
-			echo $this->input->post('Nombre');
-			echo $this->input->post('Contra');
+			$nombre = $this->input->post('Nombre');
+			$contra = $this->input->post('Contra');
+			$datos['usuario'] = $this->Inicio_model->comprobar($nombre, $contra);
+			$this->load->view('estructura/head');
+			$this->load->view('comprobar', $datos);
+			$this->load->view('estructura/foot1');
+
 		}else{
 			$this->load->view('estructura/head');
 			$this->load->view('entrada', $datos);
 			$this->load->view('estructura/foot1');
 		}
-		
+	}
 
+	public function principal()
+	{	
+			$this->load->view('estructura/head');
+			$this->load->view('principal');
+			$this->load->view('estructura/foot1');
+		
 	}
 }

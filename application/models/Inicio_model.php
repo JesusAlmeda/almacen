@@ -8,10 +8,17 @@ class Inicio_model extends CI_Model {
     }
     
     function conexion(){
-        
-       
         $conexion = $this->db->get('ab_articulos');
         return $conexion;
+    }
+
+    function comprobar($nombre, $contra){
+    	$condicion = array(
+    			'ab_usuarios.Nombre'	=> $nombre,
+    			'ab_usuarios.Contra'	=> $contra
+    		);
+    	$resultado = $this->db->get_where('ab_usuarios', $condicion);
+    	return $resultado;
     }
 
 }
