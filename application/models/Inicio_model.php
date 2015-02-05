@@ -8,10 +8,10 @@ class Inicio_model extends CI_Model {
     }
     
     function conexion(){
-
-        $consulta = 3*9;
-        return $consulta;       
         
+       
+        $conexion = $this->db->get('ab_articulos');
+        return $conexion;
     }
 
 }
