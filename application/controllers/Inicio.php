@@ -41,6 +41,7 @@ class Inicio extends CI_Controller {
 	public function principal()
 	{	
 			$this->load->view('estructura/head');
+			$this->load->view('estructura/top');
 			$this->load->view('principal');
 			$this->load->view('estructura/foot1');
 		
